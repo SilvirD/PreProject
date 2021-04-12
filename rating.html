@@ -1,0 +1,121 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rating test</title>
+
+    <script
+      src="https://kit.fontawesome.com/f66ee9dd02.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
+    <script src="js/rating.js" defer></script>
+
+    <link rel="stylesheet" href="css/rating.css" />
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="form-group">
+        <select id="product-select" class="form-control custom-select">
+          <option value="0" disabled selected>Select Product</option>
+          <option value="sony">Sony 4K TV</option>
+          <option value="samsung">Samsung 4K TV</option>
+          <option value="vizio">Vizio 4K TV</option>
+          <option value="panasonic">Panasonic 4K TV</option>
+          <option value="phillips">Phillips 4K TV</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <input
+          type="number"
+          id="rating-control"
+          class="form-control"
+          step="0.1"
+          max="5"
+          placeholder="Rate 1 - 5"
+          disabled
+        />
+      </div>
+
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th>4K Television</th>
+            <th>Rating</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <!-- 1 -->
+          <tr class="sony">
+            <td>Sony 4K TV</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+
+          <!-- 2 -->
+          <tr class="samsung">
+            <td>Samsung 4K TV</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+
+          <!-- 3 -->
+          <tr class="vizio">
+            <td>Vizio 4K TV</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+
+          <!-- 4 -->
+          <tr class="panasonic">
+            <td>Panasonic 4K TV</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+
+          <!-- 5 -->
+          <tr class="phillips">
+            <td>Phillips 4K TV</td>
+            <td>
+              <div class="stars-outer">
+                <div class="stars-inner"></div>
+              </div>
+
+              <span class="number-rating"></span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </body>
+</html>
