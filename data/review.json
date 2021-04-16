@@ -1,0 +1,98 @@
+[
+  {
+    "userID": "1",
+    "postID": "1",
+    "userName": "Tran Trong Duc",
+    "userComment": "good",
+    "userRating": "4",
+    "Date": "4/5/2020"
+  },
+  {
+    "userID": "2",
+    "postID": "1",
+    "userName": "Tran Duc Trung",
+    "userComment": "nice place\nKhông có gì để nói thêm, địa điểm quá tuyệt vời!",
+    "userRating": "5",
+    "Date": "5/3/2020"
+  },
+  {
+    "userID": "3",
+    "postID": "1",
+    "userName": "Nguyen Hoang Long",
+    "userComment": "bad place\nChặt chém khách du lịch, mình ăn bát mì tôm trứng mà 50k",
+    "userRating": "2",
+    "Date": "6/4/2020"
+  },
+  {
+    "userID": "4",
+    "postID": "1",
+    "userName": "Nguyen Hoang Nam",
+    "userComment": "normal",
+    "userRating": "3",
+    "Date": "7/4/2020"
+  },
+  {
+    "userID": "5",
+    "postID": "1",
+    "userName": "Le Hao Nam",
+    "userComment": "nice place\n",
+    "userRating": "5",
+    "Date": "8/5/2021"
+  },
+  {
+    "userID": "6",
+    "postID": "1",
+    "userName": "Duong Trong Thang",
+    "userComment": "nice place\namazing good job",
+    "userRating": "5",
+    "Date": "9/4/2020"
+  },
+  {
+    "userID": "7",
+    "postID": "1",
+    "userName": "Do Van Hieu",
+    "userComment": "normal\nCảnh đẹp, con người thân thiện nhưng dịch vụ chưa được tốt!",
+    "userRating": "3",
+    "Date": "6/4/2019"
+  },
+  {
+    "userID": "8",
+    "postID": "1",
+    "userName": "Ngo Tri Quan",
+    "userComment": "nice place\nVới mình đây là một nơi đáng để đi và trải nghiệm với bất kỳ ai.",
+    "userRating": "5",
+    "Date": "7/4/2020"
+  },
+  {
+    "userID": "9",
+    "postID": "1",
+    "userName": "Vo Huu Duc",
+    "userComment": "bad place\nPhí tiền, cảnh không đẹp như trong ảnh!",
+    "userRating": "1",
+    "Date": "8/4/2021"
+  },
+  {
+    "userID": "10",
+    "postID": "1",
+    "userName": "Tran Trong Nghia",
+    "userComment": "good\nRất đáng đồng tiền bát gạo!",
+    "userRating": "4",
+    "Date": "9/5/2020"
+  },
+  {
+    "userID": "11",
+    "postID": "1",
+    "userName": "Truong Tan Phong",
+    "userComment": "good\nKhông khí trong lành, đồ ăn tươi ngon và rất nhiều cảnh đẹp!",
+    "userRating": "4",
+    "Date": "10/4/2020"
+  },
+  {
+    "userID": "12",
+    "postID": "2",
+    "userName": "asd",
+    "userComment": "good\nKhông khí trong lành, đồ ăn tươi ngon và rất nhiều cảnh đẹp!\n\"good\nKhông khí trong lành, đồ ăn tươi ngon và rất nhiều cảnh đẹp!\"\n\"good\nKhông khí trong lành, đồ ăn tươi ngon và rất nhiều cảnh đẹp!\"\n\"good\nKhông khí trong lành, đồ ăn tươi ngon và rất nhiều cảnh đẹp!\"",
+    "userRating": "",
+    "Date": ""
+  }
+]
