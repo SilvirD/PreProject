@@ -8,6 +8,7 @@ let locationImage = document.getElementsByClassName("location-img");
 
 let commentCount = document.getElementsByClassName("commentCount");
 let userName = document.getElementById("userName");
+let userEmail = document.getElementById("userEmail");
 let userComment = document.getElementById("postComment");
 let userRating = document.getElementById("rating");
 let postButton = document.getElementById("postBtn");
@@ -127,9 +128,13 @@ async function postUserAPI() {
           userID: `${userID}`,
           postID: `${postID}`,
           userName: `${userName.value}`,
+          userEmail: `${userEmail.value}`,
           userComment: `${userComment.value}`,
-          userRating: `${userRating.value}`,
-          Date: `${new Date().getDate()}/${new Date().getMonth()}/${new Date().getFullYear()}`,
+          //Rating chua co
+          userRating: 5,
+          Date: `${new Date().getDate()}/${
+            new Date().getMonth() + 1
+          }/${new Date().getFullYear()}`,
         },
       ],
     }),
@@ -139,13 +144,18 @@ async function postUserAPI() {
     review
   );
   console.log(await res.json());
-  document.addEventListener("DOMContentLoaded", loadData);
+
+  location.reload();
 }
 
 document.addEventListener("DOMContentLoaded", loadData);
 
 postButton.addEventListener("click", () => {
-  if (userName.value.length && userComment.value.length) {
+  if (
+    userName.value.length &&
+    userComment.value.length &&
+    userEmail.value.length
+  ) {
     postUserAPI();
     alert("Thanks for your feedback");
   } else {
