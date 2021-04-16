@@ -171,3 +171,5 @@ function getID(params) {
 function replaceLineBreak(x) {
   return x.replace("\n", "<br>");
 }
+
+console.dir(userEmail);
