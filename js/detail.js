@@ -151,16 +151,8 @@ async function postUserAPI() {
 document.addEventListener("DOMContentLoaded", loadData);
 
 postButton.addEventListener("click", () => {
-  if (
-    userName.value.length &&
-    userComment.value.length &&
-    userEmail.value.length
-  ) {
-    postUserAPI();
-    alert("Thanks for your feedback");
-  } else {
-    alert("Please fill all the information");
-  }
+  postUserAPI();
+  alert("Thanks for your feedback");
 });
 
 function getID(params) {
@@ -172,4 +164,4 @@ function replaceLineBreak(x) {
   return x.replace("\n", "<br>");
 }
 
-console.dir(userEmail);
+console.log(userEmail.oninvalid);
