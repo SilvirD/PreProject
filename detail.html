@@ -196,7 +196,9 @@
             <div id="geo-location"></div>
             <div id="content"></div>
             <div id="food"></div>
-            <div>
+            <hr />
+            <h3><b>Location's map</b></h3>
+            <div style="text-align: center">
               <iframe
                 id="map"
                 src=""
@@ -208,75 +210,74 @@
               ></iframe>
             </div>
             <hr />
+          </div>
+          <div class="comment-list">
+            <div class="cl-detail">
+              <h3><span class="commentCount"></span> comments</h3>
+              <!-- <img
+                class="avatar avatar-lg mr-4"
+                src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-0.jpg"
+                alt="Julie Alma"
+              /> -->
+              <div class="comment-content" id="comment">
+                <!-- <h4>Julie Alma</h4>
+                <p>
+                  <i class="bx bx-time-five"></i>&nbsp; SEPTEMBER 23, 2017 AT
+                  12:00 AM
+                </p>
+                <p>
+                  Comment Pellentesque habitant morbi tristique senectus et
+                  netus et malesuada fames ac turpis egestas. Vestibulum
+                  tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
+                  ante. Donec eu libero sit amet quam egestas semper. Aenean
+                  ultricies mi vitae est. Mauris placerat eleifend leo.
+                </p> -->
+              </div>
+            </div>
 
-            <div class="comment-list">
-              <div class="cl-detail">
-                <h3><span class="commentCount"></span> comments</h3>
-                <!-- <img
-                  class="avatar avatar-lg mr-4"
-                  src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-0.jpg"
-                  alt="Julie Alma"
-                /> -->
-                <div class="comment-content" id="comment">
-                  <!-- <h4>Julie Alma</h4>
-                  <p>
-                    <i class="bx bx-time-five"></i>&nbsp; SEPTEMBER 23, 2017 AT
-                    12:00 AM
-                  </p>
-                  <p>
-                    Comment Pellentesque habitant morbi tristique senectus et
-                    netus et malesuada fames ac turpis egestas. Vestibulum
-                    tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
-                    ante. Donec eu libero sit amet quam egestas semper. Aenean
-                    ultricies mi vitae est. Mauris placerat eleifend leo.
-                  </p> -->
+            <div class="cl-form">
+              <h4>Leave a comment</h4>
+              <form action="">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="exampleFormControlInput1">Name</label>
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="userName"
+                        placeholder="Name"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div class="col-lg-6">
+                    <div class="form-group">
+                      <label for="userEmail">Email address</label>
+                      <input
+                        type="email"
+                        class="form-control"
+                        id="userEmail"
+                        placeholder="Your Email"
+                        required
+                      />
+                    </div>
+                  </div>
                 </div>
-              </div>
-
-              <div class="cl-form">
-                <h4>Leave a comment</h4>
-                <form action="">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="exampleFormControlInput1">Name</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          id="userName"
-                          placeholder="Name"
-                          required
-                        />
-                      </div>
-                    </div>
-
-                    <div class="col-lg-6">
-                      <div class="form-group">
-                        <label for="userEmail">Email address</label>
-                        <input
-                          type="email"
-                          class="form-control"
-                          id="userEmail"
-                          placeholder="Your Email"
-                          required
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Comments</label>
-                    <textarea
-                      class="form-control"
-                      id="postComment"
-                      rows="3"
-                      required
-                    ></textarea>
-                  </div>
-                  <button id="postBtn" type="button" class="btn btn-primary">
-                    Comment
-                  </button>
-                </form>
-              </div>
+                <div class="form-group">
+                  <label for="exampleFormControlTextarea1">Comments</label>
+                  <textarea
+                    class="form-control"
+                    id="postComment"
+                    rows="3"
+                    required
+                  ></textarea>
+                </div>
+                <button id="postBtn" type="button" class="btn btn-primary">
+                  Comment
+                </button>
+              </form>
             </div>
           </div>
         </div>

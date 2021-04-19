@@ -6,7 +6,7 @@ let locationPlace = document.getElementById("location-place");
 let cityName = document.getElementById("cityName");
 
 async function getTravelAPI() {
-  let travel_response = await fetch("data/travel.json");
+  let travel_response = await fetch("https://sheetdb.io/api/v1/6cbntm54spahz");
   // console.log(travel_response);
 
   let travel_data = await travel_response.json();

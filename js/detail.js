@@ -2,7 +2,7 @@ let title = document.getElementById("postTitle");
 let introduction = document.getElementById("intro");
 let geo = document.getElementById("geo-location");
 let content = document.getElementById("content");
-let food = document.getElementById("food");
+// let food = document.getElementById("food");
 let comment = document.getElementById("comment");
 let locationImage = document.getElementsByClassName("location-img");
 
@@ -16,8 +16,9 @@ let postButton = document.getElementById("postBtn");
 let map = document.getElementById("map");
 
 async function getTravelAPI() {
-  const travel_response = await fetch("data/travel.json");
-  // let travel_response = await fetch("https://sheetdb.io/api/v1/t2jatjycxleq1");
+  const travel_response = await fetch(
+    "https://sheetdb.io/api/v1/6cbntm54spahz"
+  );
   console.log(travel_response);
 
   const travel_data = await travel_response.json();
@@ -64,7 +65,7 @@ async function loadData() {
         introduction.innerHTML = travelData[i]["introduction"];
         geo.innerHTML = travelData[i]["geo-location"];
         content.innerHTML = travelData[i]["content"];
-        food.innerHTML = travelData[i]["foods"];
+        // food.innerHTML = travelData[i]["foods"];
 
         image = travelData[i]["location-gallery"].split("\n");
 
@@ -74,7 +75,7 @@ async function loadData() {
         if (reviewData[j].postID === ID) {
           count++;
           comment.insertAdjacentHTML(
-            "beforeend",
+            "afterbegin",
             `<h4>${reviewData[j][`userName`]}</h4>
           <p>
             <i class="bx bx-time-five"></i>&nbsp; ${reviewData[j]["Date"]}

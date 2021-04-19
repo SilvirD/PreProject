@@ -201,8 +201,9 @@ body {
   top: 50vh;
   color: #fff;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 35px;
   text-align: center;
+  padding: 120px;
 }
 
 .bg-overlay {
@@ -228,6 +229,11 @@ body {
 
 .post-content {
   margin: 0 auto;
+  text-align: justify;
+}
+
+.post-content ul {
+  list-style: none;
 }
 
 .comment-list {
@@ -266,4 +272,8 @@ body {
 .card-img-top {
   width: 200px;
   height: 300px;
+}
+
+.location-img {
+  margin: 50px;
 }
