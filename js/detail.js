@@ -15,8 +15,6 @@ let postButton = document.getElementById("postBtn");
 
 let map = document.getElementById("map");
 
-const starsTotal = 5;
-
 async function getTravelAPI() {
   const travel_response = await fetch("data/travel.json");
   // let travel_response = await fetch("https://sheetdb.io/api/v1/t2jatjycxleq1");
@@ -30,7 +28,7 @@ async function getTravelAPI() {
 
 async function getReviewAPI() {
   const review_response = await fetch(
-    "https://sheetdb.io/api/v1/5012tnw87wtey?fbclid=IwAR0ERbbmyjeuDg6AldYQyak2SL5tI3Bz_4ZIMKgUpDuFaEFkxfDhmfwvifI"
+    "https://sheetdb.io/api/v1/ri913cltbv776"
   );
   console.log(review_response);
 
@@ -78,12 +76,6 @@ async function loadData() {
           comment.insertAdjacentHTML(
             "beforeend",
             `<h4>${reviewData[j][`userName`]}</h4>
-            <div class ="${reviewData[j]["userName"]}">
-            <div class="stars-outer">
-            <div class="stars-inner"></div>
-          </div>
-            </div>
-              <span class="number-rating"></span>
           <p>
             <i class="bx bx-time-five"></i>&nbsp; ${reviewData[j]["Date"]}
           </p>
@@ -121,25 +113,6 @@ async function postUserAPI() {
   let params = new URL(document.location).searchParams;
   let postID = getID(params);
 
-  //Rating
-  for (let i = 0; i < reviewData.length; i++) {
-    let ratings = reviewData[i]["userRating"];
-    console.log(ratings);
-    //Get percentage
-    const starPercentage = (ratings / starsTotal) * 100;
-
-    //Round to nearest 10
-    const starPercentageRounded = `${Math.round(starPercentage / 10) * 10}%`;
-
-    console.log(starPercentageRounded);
-
-    //Set width of stars-inner to percentage
-    document.querySelector(` .stars-inner`).style.width = starPercentageRounded;
-
-    //Add number rating
-    document.querySelector(` .number-rating`).innerHTML = ratings;
-  }
-
   //Vaidate and Post
   if (
     userName.validity.valid === true &&
@@ -163,8 +136,8 @@ async function postUserAPI() {
             userName: `${userName.value}`,
             userEmail: `${userEmail.value}`,
             userComment: `${userComment.value}`,
-            //Rating chua co
-            userRating: 5,
+
+            // userRating: 5,
             Date: `${new Date().getDate()}/${
               new Date().getMonth() + 1
             }/${new Date().getFullYear()}`,
@@ -172,10 +145,7 @@ async function postUserAPI() {
         ],
       }),
     };
-    const res = await fetch(
-      "https://sheetdb.io/api/v1/5012tnw87wtey?fbclid=IwAR0ERbbmyjeuDg6AldYQyak2SL5tI3Bz_4ZIMKgUpDuFaEFkxfDhmfwvifI",
-      review
-    );
+    const res = await fetch("https://sheetdb.io/api/v1/ri913cltbv776", review);
     console.log(await res.json());
 
     alert("Thanks for your feedback!");
@@ -189,19 +159,6 @@ async function postUserAPI() {
 postButton.addEventListener("click", () => {
   postUserAPI();
 });
-
-// ratingControl.addEventListener("blur", (e) => {
-//   const rating = e.target.value;
-
-//   if (rating > 5) {
-//     alert("Please rate 1 - 5");
-//     return;
-//   }
-
-//   ratings[product] = rating;
-
-//   getRatings();
-// });
 
 document.addEventListener("DOMContentLoaded", loadData);
 

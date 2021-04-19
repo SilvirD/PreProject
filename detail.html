@@ -39,6 +39,7 @@
     <link rel="stylesheet" href="css/rating.css" />
 
     <script src="js/detail.js" defer></script>
+    <!-- <script src="js/travel.js" defer></script> -->
 
     <title>TripReview</title>
   </head>
@@ -57,19 +58,24 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="search">
-          <form class="form-inline">
+        <!-- <div class="search">
+          <form class="form-inline" action="travel.html">
             <input
+              id="searchInput"
               class="form-control mr-sm-2"
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
-            <button type="button" class="btn btn-outline-primary">
+            <button
+              id="searchBtn"
+              type="submit"
+              class="btn btn-outline-primary"
+            >
               Tìm kiếm
             </button>
           </form>
-        </div>
+        </div> -->
         <div
           class="collapse navbar-collapse d-flex justify-content-end"
           id="navbarNav"
@@ -105,13 +111,7 @@
     <div class="container">
       <div class="row">
         <div class="detail-main-content">
-          <div class="post-info text-center">
-            <p>
-              Written by <span>John Slim</span> |
-              <span>January 16, 2016</span> |
-              <span class="commentCount"></span> comments
-            </p>
-          </div>
+          <div class="post-info text-center"></div>
 
           <div class="post-content col-lg-10">
             <!-- <p>
@@ -254,12 +254,10 @@
                       <div class="form-group">
                         <label for="userEmail">Email address</label>
                         <input
-                          type="number"
+                          type="email"
                           class="form-control"
                           id="userEmail"
-                          step="0.1"
-                          max="5"
-                          placeholder="Rate 1 - 5"
+                          placeholder="Your Email"
                           required
                         />
                       </div>
