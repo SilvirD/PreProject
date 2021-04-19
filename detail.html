@@ -21,7 +21,22 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
     />
+
+    <script
+      src="https://kit.fontawesome.com/f66ee9dd02.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
+
     <link rel="stylesheet" href="assets/style.css" />
+
+    <link rel="stylesheet" href="css/rating.css" />
 
     <script src="js/detail.js" defer></script>
 
@@ -197,13 +212,13 @@
             <div class="comment-list">
               <div class="cl-detail">
                 <h3><span class="commentCount"></span> comments</h3>
-                <img
+                <!-- <img
                   class="avatar avatar-lg mr-4"
                   src="https://d19m59y37dris4.cloudfront.net/directory/1-6-1/img/avatar/avatar-0.jpg"
                   alt="Julie Alma"
-                />
+                /> -->
                 <div class="comment-content" id="comment">
-                  <h4>Julie Alma</h4>
+                  <!-- <h4>Julie Alma</h4>
                   <p>
                     <i class="bx bx-time-five"></i>&nbsp; SEPTEMBER 23, 2017 AT
                     12:00 AM
@@ -214,7 +229,7 @@
                     tortor quam, feugiat vitae, ultricies eget, tempor sit amet,
                     ante. Donec eu libero sit amet quam egestas semper. Aenean
                     ultricies mi vitae est. Mauris placerat eleifend leo.
-                  </p>
+                  </p> -->
                 </div>
               </div>
 
@@ -239,10 +254,12 @@
                       <div class="form-group">
                         <label for="userEmail">Email address</label>
                         <input
-                          type="email"
+                          type="number"
                           class="form-control"
                           id="userEmail"
-                          placeholder="Email"
+                          step="0.1"
+                          max="5"
+                          placeholder="Rate 1 - 5"
                           required
                         />
                       </div>
@@ -257,7 +274,7 @@
                       required
                     ></textarea>
                   </div>
-                  <button id="postBtn" type="submit" class="btn btn-primary">
+                  <button id="postBtn" type="button" class="btn btn-primary">
                     Comment
                   </button>
                 </form>
