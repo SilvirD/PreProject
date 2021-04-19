@@ -102,6 +102,8 @@ async function locationSearch() {
 }
 
 searchBtn.addEventListener("click", () => {
+  cityName.innerHTML = "";
+
   locationSearch();
 });
 
